@@ -1,0 +1,149 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: ORM
+meta:
+  id: wrk_4dc359ab598b436db73e2ec68a3cdb2a
+  created: 1771466012435
+  modified: 1771466058836
+  description: ""
+collection:
+  - name: Users
+    meta:
+      id: fld_0b1a268a90254c64944abb7e525d3615
+      created: 1771466069980
+      modified: 1771466084230
+      sortKey: -1771466069980
+      description: ""
+    children:
+      - url: http://localhost:3333/users
+        name: Create
+        meta:
+          id: req_09bf0f7261ee40dbaa7361ce838e0ec9
+          created: 1771466089215
+          modified: 1771556844304
+          isPrivate: false
+          description: ""
+          sortKey: -1771466089215
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Roberto Kennedy",
+            	"email": "roberto.kpp@gmail.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/users
+        name: index
+        meta:
+          id: req_b6db7166345c45929ff990d450bb0c92
+          created: 1771558375604
+          modified: 1771558390095
+          isPrivate: false
+          description: ""
+          sortKey: -1771558375604
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/users/ab9cab38-dac7-4e4a-a870-84bdeda077ae
+        name: show
+        meta:
+          id: req_07ab71c3804e4d2b85d066ed0b4bf42d
+          created: 1771558796302
+          modified: 1771558806871
+          isPrivate: false
+          description: ""
+          sortKey: -1771512232409.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Questions
+    meta:
+      id: fld_39477fb6f53b4bb39f81a4c4add9020c
+      created: 1771559414621
+      modified: 1771559414621
+      sortKey: -1771559414621
+      description: ""
+    children:
+      - url: http://localhost:3333/questions
+        name: Create
+        meta:
+          id: req_b9be7304d6374f87a53dde10fd61f149
+          created: 1771559418311
+          modified: 1771559717273
+          isPrivate: false
+          description: ""
+          sortKey: -1771559420690
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"tittle": "Prisma ORM",
+            	"content": "Como inserir no banco com prisma?",
+            	"user_id": "ab9cab38-dac7-4e4a-a870-84bdeda077ae"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_53469ef711d3afe88956381eb94eaa831b88f202
+    created: 1771466012438
+    modified: 1771466012438
+environments:
+  name: Base Environment
+  meta:
+    id: env_53469ef711d3afe88956381eb94eaa831b88f202
+    created: 1771466012437
+    modified: 1771466012437
+    isPrivate: false
