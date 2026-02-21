@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
 import { prisma } from "@/prisma";
-import { Console } from "console";
 
 class QuestionsController {
   async index(request: Request, response: Response) {
