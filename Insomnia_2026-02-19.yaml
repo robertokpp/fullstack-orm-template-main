@@ -20,7 +20,7 @@ collection:
         meta:
           id: req_09bf0f7261ee40dbaa7361ce838e0ec9
           created: 1771466089215
-          modified: 1771556844304
+          modified: 1771635592007
           isPrivate: false
           description: ""
           sortKey: -1771466089215
@@ -29,8 +29,8 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"name": "Roberto Kennedy",
-            	"email": "roberto.kpp@gmail.com"
+            	"name": "Joao pedro",
+            	"email": "joaopedro@gmail.com"
             }
         headers:
           - name: Content-Type
@@ -106,7 +106,7 @@ collection:
         meta:
           id: req_b9be7304d6374f87a53dde10fd61f149
           created: 1771559418311
-          modified: 1771559717273
+          modified: 1771635990759
           isPrivate: false
           description: ""
           sortKey: -1771559420690
@@ -115,13 +115,101 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"tittle": "Prisma ORM",
-            	"content": "Como inserir no banco com prisma?",
-            	"user_id": "ab9cab38-dac7-4e4a-a870-84bdeda077ae"
+            	"tittle": "node.js",
+            	"content": "Como criar uma API?",
+            	"userId": "ab9cab38-dac7-4e4a-a870-84bdeda077ae"
             }
         headers:
           - name: Content-Type
             value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/questions
+        name: index
+        meta:
+          id: req_0a0d84ee607f4e58858e73c683990bba
+          created: 1771636224933
+          modified: 1771636949666
+          isPrivate: false
+          description: ""
+          sortKey: -1771636224933
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        parameters:
+          - name: tittle
+            value: prisma
+            description: ""
+            disabled: true
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/questions/8d12a07d-5da4-4739-8d12-3245d007df7f
+        name: Update
+        meta:
+          id: req_83da0961bdf443faadb7a24ada21d231
+          created: 1771636771909
+          modified: 1771638697529
+          isPrivate: false
+          description: ""
+          sortKey: -1771558898147
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"tittle": "Prisma",
+            	"content": "como fazer um insert com prisma"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/questions/8d12a07d-5da4-4739-8d12-3245d007df7f
+        name: delete
+        meta:
+          id: req_8c019546290b4458be0dcd65cb707b7c
+          created: 1771638815916
+          modified: 1771639030380
+          isPrivate: false
+          description: ""
+          sortKey: -1771558636875.5
+        method: DELETE
+        headers:
           - name: User-Agent
             value: insomnia/12.3.1
             description: ""
