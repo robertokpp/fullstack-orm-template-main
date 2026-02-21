@@ -12,6 +12,8 @@ model User {
   name  String
   email String @unique
 
+  questions Question[]
+
   @@map("users")
 }
 
@@ -23,5 +25,7 @@ model Question {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   userId String @map("user_id")
+
+  user User @relation(fields: [userId], references: [id])
   @@map("questions")
 }
